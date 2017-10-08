@@ -30,7 +30,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+def gettext_noop(s):
+    return s
 # Application definition
 
 
@@ -156,17 +157,24 @@ INSTALLED_APPS = (
 LANGUAGES = (
     ## Customize this
     ('en', gettext('en')),
+    ('uk', gettext('uk'))
 )
 
 CMS_LANGUAGES = {
     ## Customize this
     1: [
         {
-            'name': gettext('en'),
+            'name': gettext('English'),
             'hide_untranslated': False,
             'code': 'en',
             'public': True,
             'redirect_on_fallback': True,
+        },
+{
+            'code': 'uk',
+            'name': gettext('Ukrainian'),
+            'fallbacks': ['en'],
+            'public': False,
         },
     ],
     'default': {
