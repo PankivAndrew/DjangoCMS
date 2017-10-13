@@ -125,6 +125,7 @@ MIDDLEWARE_CLASSES = (
 INSTALLED_APPS = (
     'Tours.apps.ToursConfig',
     'News.apps.NewsConfig',
+    'Letters.apps.LettersConfig',
     'djangocms_admin_style',
     'django.contrib.auth',
     'django.contrib.contenttypes',
