@@ -126,6 +126,7 @@ INSTALLED_APPS = (
     'Tours.apps.ToursConfig',
     'News.apps.NewsConfig',
     'Letters.apps.LettersConfig',
+    'TourGuide.apps.TourGuideConfig',
     'djangocms_admin_style',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -188,8 +189,7 @@ CMS_LANGUAGES = {
 CMS_TEMPLATES = (
     ## Customize this
     ('fullwidth.html', 'Fullwidth'),
-    ('sidebar_left.html', 'Sidebar Left'),
-    ('sidebar_right.html', 'Sidebar Right')
+
 )
 
 CMS_PERMISSION = True
